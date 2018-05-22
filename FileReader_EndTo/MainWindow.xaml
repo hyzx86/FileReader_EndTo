@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileReader_EndTo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Bonita Log Reader End To.." Height="450" Width="800">
     <Grid>
-        
+        <ComboBox HorizontalAlignment="Left" Name="cb1" Margin="157,30,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="DEV" IsSelected="True"/>
+            <ComboBoxItem Content="UAT"/>
+            <ComboBoxItem Content="PROD"/>
+        </ComboBox>
+        <Label Content="Env" HorizontalAlignment="Left" Margin="122,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.596,-0.326"/>
+        <Button Content="Load" HorizontalAlignment="Left" Margin="481,28,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
+        <TextBox Name="txtContent" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Auto"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"
+                 
+                 HorizontalAlignment="Left" Height="317" Margin="0,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="782" ScrollViewer.CanContentScroll="True"/>
+        <TextBox Name="txtlenth"  Text="100" HorizontalAlignment="Left" Height="23" Margin="372,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" Background="#FF8585E2"/>
+        <Label Content="From Last" HorizontalAlignment="Left" Margin="301,28,0,0" VerticalAlignment="Top"/>
+        <Label Content="KB" HorizontalAlignment="Left" Margin="451,27,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.76,0.64"/>
     </Grid>
 </Window>
